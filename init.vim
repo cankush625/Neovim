@@ -25,8 +25,6 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 
 call plug#end()
 
-source C:\Users\cankush\AppData\Local\nvim-data\site\autoload\plug.vim
-
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
