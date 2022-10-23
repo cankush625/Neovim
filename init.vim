@@ -7,11 +7,10 @@
 :set softtabstop=4
 :set mouse=a
 
-call plug#begin('./Plugged')
+call plug#begin('~/AppData/Local/nvim/site/plugged')
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
-Plug 'https://github.com/ryanoasis/nerd-fonts' " Nerd Fonts
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
@@ -26,10 +25,15 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 
 call plug#end()
 
+source C:\Users\cankush\AppData\Local\nvim-data\site\autoload\plug.vim
+
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+
+" Select the auto-suggestion using ENTER key
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 nmap <F8> :TagbarToggle<CR>
 
@@ -41,20 +45,4 @@ nmap <F8> :TagbarToggle<CR>
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
-
-let g:airline_powerline_fonts = 1
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_nerdtree = 1
-let g:webdevicons_enable_unite = 1
-let g:webdevicons_enable_vimfiler = 1
-let g:webdevicons_enable_airline_tabline = 1
-let g:webdevicons_enable_airline_statusline = 1
-let g:webdevicons_enable_ctrlp = 1
-let g:webdevicons_enable_startify = 1
-let g:webdevicons_enable_flagship_statusline = 1
-let g:WebDevIconsUnicodeDecorateFileNodes = 1
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
-let g:webdevicons_conceal_nerdtree_brackets = 1
-let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
-let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
 
