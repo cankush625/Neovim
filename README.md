@@ -13,5 +13,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubuserco
 Go to Neovim editor and run the command PlugInstall
 
 ### Step 4: Install COC Nvim for auto completion
-Change directory to `~/AppData/Local/nvim/site/plugged` where all plugins are installed and run `yarn install` to install the required packages for COC plugin.
+Change directory to `~/AppData/Local/nvim/site/plugged/coc.nvim` where COC nvim plugin is installed and run `yarn install` to install the required packages for COC plugin.
 
+### Step 5: Install COC-Pyright Nvim for auto completion
+Change directory to `~/AppData/Local/nvim/site/plugged/coc-pyright` where COC Pyright plugin is installed and run `yarn install` to install the required packages for COC Pyright plugin.
