@@ -17,3 +17,8 @@ Change directory to `~/AppData/Local/nvim/site/plugged/coc.nvim` where COC nvim 
 
 ### Step 5: Install COC-Pyright Nvim for auto completion
 Change directory to `~/AppData/Local/nvim/site/plugged/coc-pyright` where COC Pyright plugin is installed and run `yarn install` to install the required packages for COC Pyright plugin.
+
+### Step 6: Install Exuberant ctags
+Install the exuberant ctags using below command:
+`$ brew install ctags-exuberant`
+And specify the ctag location in the init.vim file for option `tagbar_ctags-bin`
